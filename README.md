@@ -16,4 +16,21 @@
 Debug.Log(Mathf.IsPowerOfTwo(32)), esse retornará "true".
 
 # Mathf.Log:
- O Mathf.Log consegue receber tanto valores decimais quanto valores inteiros, em resumo, ele pode utilizar de valores decimais (float) em seus cálculos. Agora, sobre o método em si, ele funciona para cálcular o logaritmo de um número específico em uma base específica, ambos impostos pelo programador e agora com isso em mãos ele fará os cálculos e irá retornar o logaritmo. Caso seja dado somente o número sem a sua base, ele fará o cálculo do logaritmo natural (base) do tal valor dado.
+ O Mathf.Log consegue receber como pârametro dados do tipo Float e Int, utilizando-os tanto para o cálculo quanto para retornar o valor final de tudo. Agora, sobre o método em si, será necessário fornecer dois valores numéricos que serão utilizados para descobrir o Logaritmo, será então necessário fornecer um valor específico e um valor para a base. Também tem como fornecer somente o valor específico e nesse caso será retornado o logaritmo natural do número. Exemplos, respectivamente: Debug.Log (Mathf.Log(6,2));, logaritmo de 6 na base 2, o resultado será: 2.584963, um número decimal (float).
+Debug.Log (Mathf.Log(100));, será retornado o logaritmo natural de 100 e o resultado do cálculo que é: 4.60517.
+
+# Mathf.Log10:
+ Segue as mesmas propriedades do anterior, conseguindo receber valores float e int, tendo a única diferença de ter uma base fixa para o cálculo e sendo somente necessário fornecer o valor que será descoberto o logaritmo, e assim será retornado o resultado.
+
+# Mathf.Max:
+ O Mathf.Max, como já é de se pensar pelo seu nome, irá aceitar de um à mais valores numéricos e após serem inseridos, o maior deles será retornado. Aceita dados do tipo Int e Float, também conseguindo utilizar de valores negativos para as suas operações: nesse caso, o número mais próximo de zero será o maior. Vamos para um exemplo: Debug.Log (Mathf.Max (1,2));, 2 seria retornado.
+Debug.Log (Mathf.Max(-1,-0.2));, -0.2 seria o valore retornado por está mais próximo de zero. 
+
+# Mathf. Min:
+ Ele atua como o inverso do Mathf.Max, recebendo os mesmos tipos de dados e quantidade de valores numéricos, mas retornando o menor valor dentre os que foram inseridos no seu parâmetro. Por exemplo: Debug.Log (Mathf.Max (1,2));, 1 seria retornado por ser o menor valor.
+Debug.Log (Mathf.Max(-1,-0.2));, nesse caso o -1 seria retornado por ser o menor valor.
+
+
+# Mathf.NextPowerOfTwo:
+
+# Mathf.RoundToInt:
