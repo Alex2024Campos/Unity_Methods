@@ -1,44 +1,19 @@
-# Unity_Methods
-Approximly: Recebe os valores inseridos pelo usuário e os compara, retornando "true" se forem próximos, de exemplo: se ambos os valores inseridos forem 1, o programa retornará "true".
+## Métodos Matemáticos do Unity
 
+# Mathf.Abs:
+ O Mathf.Abs consegue receber dois tipos de dados: Int e Float, sendo os números inteiros, positivos ou negativos, e os números decimais. A sua função é receber um valor e retornar o seu valor absoluto, ou seja, retornará o mesmo valor só que positivo pois ele irá analisar a distância entre esse número (negativo e positivo) em relação ao ponto zero. De exemplo: Debug.Log(Mathf.Abs(-10)), essa linha de código apresentará o valor 10 para o usuário.
 
-Ping Pong: Irá receber F e irá eleva-lo a um valor P.
------------------------------------------------------------------------------
+# Mathf.Approximately: 
+ Recebendo valores float, ou seja, decimais, o Mathf.Approximately fará a comparação de dois valores impostos pelo usuário, retornando assim verdadeiro ou falso conforme o resultado. Se forem semelhantes, será assim retornado "true" e se contrário, "false"". Exemplo: if (Mathf.Approximately (1.0f, 10.0f / 10.0f)){
+ print("Os valores são aproximadamente iguais");
+}, esse código fará a análise dos valores dentro de seus parâmetros e caso seja "true", retornará uma mensagem conforme feita no caso.
+ 
+# Mathf.ClosestPowerOfTwo:
+ Esse método recebe somente valores inteiros, assim utilizando-os para fazer o seguinte cálculo: ele irá pegar o valor inserido pelo usuário e retornará assim o valor da potência de dois mais próximo do número fornecido. De exemplo: Debug.Log(Mathf.ClosestPowerOfTwo(7)), retornará 8, pois é a potência de dois mais próxima do parâmetro.
 
-Abs: O abs é um método estático, logo, terá algo como se fosse um prefixo do C# sempre que utilizado: Math.abs(). Agora, sobre o Math.abs, o mesmo recebe um valor numérico e o retorna o mesmo valor, em outras palavras o valor absoluto passado. De exemplo: Math.abs (1) ---> Retornará 1. Ele aceita valores negativos, positivos e o próprio zero. Abs não aceita uma string, valor nenhum, colchetes ou mais de um valor, aceitando somente um valor numérico nos seus parâmetros. Sobre o valor nenhum, é no caso dos parenteses estarem literalmente vazios. ("") Representa zero.
+# Mathf.IsPowerOfTwo:
+ Mathf.IsPowerOfTwo receberá somente valores inteiros (Int) como pârametro, pegando assim esse valor e analisando se o mesmo é o resultado de uma potência de dois, retornando "true" no caso do número realmente ser uma potência de dois ou "false" se o contrário. Como exemplo, utilizaremos o 7 e 2: Debug.Log(Mathf.IsPowerOfTwo(7));, esse código retornará "false".
+Debug.Log(Mathf.IsPowerOfTwo(32)), esse retornará "true".
 
-
-
-Aproxximaly: É um método que recebe os valores inseridos pelo usuário, os comparando e analisando se são próximos um dos outros, retornando true no caso de cumprir com as condições do método.
-
-
-
-Log: O Mathf.Log irá receber dois valores numéricos, sendo respectivamente o valor e a sua base, como por exemplo: (6,2), nisso será calculado o Logaritmo de 6 na base 2 e assim será retornado o valor resultante desse cálculo. Caso não seja fornecido a base e somente o primeiro valor, poderá ainda sim fazer um cálculo e descobrir o valor natural (base), o retornando também. Recebe de parâmetro de 1 a 2 números.
-
-
-
-Log 10: É quase a mesma coisa que o anterior, somente tendo a diferença de já ter uma base fixa de valor 10, logo só é necessário enviar o valor que será calculado o Logaritmo. Como pro exemplo: (Mathf.Log10(20)), que assim pegará o valor de 20 para calcular o seu logaritmo na base de 10.
-
-
-
-Max: O Mathf.Max recebe de dois ou mais valores para compara-los depois retornar o maior valor deles e no caso de ser dado valores negativos, será retornado o valor mais próximo do zero.De exemplo, utilizamos o seguinte: (1,2) e (-1,-2), pense que são dois códigos diferentes, seria assim retornado, respectivamente, 2 e -1, pois são os maiores dos parâmetros e seguindo as propriedades dos conjuntos. 
-
-
-
-Min: O Mathf.Min, como o anterior, consegue receber vários valores e só se diferencia na questão de oferecer o valor mínimo dentre os valores entregues aos parâmetros. O código retornará de forma inversa ao anterior os resultados, como por exemplo: (1,2) e (-1,-2), 1 e -2 seriam os retornados para o usuário. 
-
-
-
-Exp: "Esse método recebe um valor numérico" e retorna o valor numérico elevado ao que foi inserido em seus parâmetros para o cálculo.
-
-
-
-IsPowerOfTwo: Mathf.IsPowerOfTwo, se resume em receber um valor específico que verificará se o número inserido é uma potência de dois e no caso de ser, retornará true.
-
-
-
-ClosestPowerOfTwo:
-
-
-
-FloatToHalf
+# Mathf.Log:
+ O Mathf.Log consegue receber tanto valores decimais quanto valores inteiros, em resumo, ele pode utilizar de valores decimais (float) em seus cálculos. Agora, sobre o método em si, ele funciona para cálcular o logaritmo de um número específico em uma base específica, ambos impostos pelo programador e agora com isso em mãos ele fará os cálculos e irá retornar o logaritmo. Caso seja dado somente o número sem a sua base, ele fará o cálculo do logaritmo natural (base) do tal valor dado.
