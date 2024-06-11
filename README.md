@@ -7,4 +7,8 @@
 ## Raycast:
  Raycast fará o envio de um raio em determinado lugar com determinado comprimento e no caso de colidir com algo, retornará true e se não, false.
 
-## 
+## Linecast:
+ Tem a função de retornar true ou false, dependendo da condição de algo ultrapassar a linha do começo até o final ou se não, respectivamente.
+
+## OverlapSphere:
+ Ele calcula e armazena os colisores que tocarem em determinada esfera ou que estiverem em seu interior.
